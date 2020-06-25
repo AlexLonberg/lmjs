@@ -1,0 +1,47 @@
+{
+  "name": "lmjs",
+  "version": "0.4.0",
+  "description": "lib JS",
+  "author": "Alexander Lonberg <alexlonberg@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "library"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "core",
+    "is",
+    "number",
+    "string",
+    "object",
+    "array",
+    "stylecase",
+    "utils"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./is": "./is/index.js",
+    "./number": "./number/index.js",
+    "./string": "./string/index.js",
+    "./object": "./object/index.js",
+    "./array": "./array/index.js",
+    "./stylecase": "./stylecase/index.js",
+    "./utils": "./utils/index.js"
+  },
+  "scripts": {
+    "test": "node node_modules/mocha/bin/_mocha ./.test/index.js",
+    "coverage": "c8 --exclude .test/**/*  --report-dir ./.test/coverage npm run test",
+    "coverage.report": "c8 report --exclude .test/**/*  --report-dir ./.test/coverage --reporter=html"
+  },
+  "devDependencies": {
+    "c8": "^7.2.0",
+    "eslint": "^7.3.1",
+    "mocha": "^8.0.1"
+  },
+  "repository": "https://github.com/AlexLonberg/lmjs.git",
+  "homepage": "https://github.com/AlexLonberg/lmjs",
+  "type": "module",
+  "private": true
+}
