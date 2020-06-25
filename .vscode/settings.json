@@ -1,0 +1,13 @@
+{
+  "debug.node.autoAttach": "on",
+  "files.exclude": {
+    "**/node_modules/": true,
+    ".private/": false,
+    ".vscode/": false
+  },
+  "search.exclude": {
+    "**/node_modules/": true,
+    ".private/": false,
+    ".test/": true
+  }
+}

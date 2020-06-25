@@ -1,0 +1,8 @@
+{
+  "name": "assert",
+  "description": "Заглушка NodeJS assert",
+  "version": "0.0.1",
+  "main": "index.js",
+  "type": "modules",
+  "private": true
+}
